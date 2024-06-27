@@ -12,7 +12,7 @@ layout_mode = 2
 
 [node name="InputLabel" type="Label" parent="Header"]
 layout_mode = 2
-text = "Input:"
+text = "Content:"
 
 [node name="OptionsButton" type="OptionButton" parent="Header"]
 layout_mode = 2

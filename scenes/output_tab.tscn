@@ -42,9 +42,9 @@ text = "User"
 layout_mode = 2
 text = "Config"
 
-[node name="SubmitButton" type="Button" parent="TabMargin/Content/ScrollBehavior/ScrollContainer/UserMsg/Header"]
+[node name="SendButton" type="Button" parent="TabMargin/Content/ScrollBehavior/ScrollContainer/UserMsg/Header"]
 layout_mode = 2
-text = "Submit"
+text = "Send"
 
 [node name="InputText" type="LineEdit" parent="TabMargin/Content/ScrollBehavior/ScrollContainer/UserMsg"]
 layout_mode = 2
@@ -62,6 +62,14 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 6
 text = "AI Model"
+
+[node name="ApplyButton" type="Button" parent="TabMargin/Content/ScrollBehavior/ScrollContainer/AiMsg/Header"]
+layout_mode = 2
+text = "Apply"
+
+[node name="OpenButton" type="Button" parent="TabMargin/Content/ScrollBehavior/ScrollContainer/AiMsg/Header"]
+layout_mode = 2
+text = "Open"
 
 [node name="DeleteButton" type="Button" parent="TabMargin/Content/ScrollBehavior/ScrollContainer/AiMsg/Header"]
 layout_mode = 2

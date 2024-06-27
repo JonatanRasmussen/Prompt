@@ -76,13 +76,17 @@ layout_mode = 2
 [node name="MsgBlockButtons" type="HBoxContainer" parent="Inputs/InputSetup/ScrollBehavior/ScrollContainer/CenterContainer"]
 layout_mode = 2
 
+[node name="NewLineButton" type="Button" parent="Inputs/InputSetup/ScrollBehavior/ScrollContainer/CenterContainer/MsgBlockButtons"]
+layout_mode = 2
+text = "Add Line"
+
 [node name="NewBlockButton" type="Button" parent="Inputs/InputSetup/ScrollBehavior/ScrollContainer/CenterContainer/MsgBlockButtons"]
 layout_mode = 2
-text = "New"
+text = "Add Block"
 
-[node name="GeneratePromptButton" type="Button" parent="Inputs/InputSetup/ScrollBehavior/ScrollContainer/CenterContainer/MsgBlockButtons"]
+[node name="BuildPromptButton" type="Button" parent="Inputs/InputSetup/ScrollBehavior/ScrollContainer/CenterContainer/MsgBlockButtons"]
 layout_mode = 2
-text = "Generate"
+text = "Build Prompt"
 
 [node name="Outputs" type="MarginContainer" parent="."]
 layout_mode = 2

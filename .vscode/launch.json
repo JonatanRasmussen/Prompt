@@ -1,0 +1,44 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Godot",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_godot",
+            "program": "${env:GODOT4}", // Add Godot.exe to your Windows PATH
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": "Run Console",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_regular",
+            "program": "${workspaceFolder}/.godot/mono/temp/bin/Debug/Prompt.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+        },
+        /*{
+            "name": "Run Tests",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_regular_and_run_tests",
+            "program": "${workspaceFolder}/bin/Debug/net6.0/GCD.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+        }, */
+        /*{
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}",
+        }*/
+    ]
+}

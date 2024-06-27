@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://dgugn7kay70vg"]
+
+[node name="OutputTab" type="HBoxContainer"]
+offset_right = 115.0
+offset_bottom = 75.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TabMargin" type="MarginContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Content" type="VBoxContainer" parent="TabMargin"]
+layout_mode = 2
+
+[node name="ScrollBehavior" type="ScrollContainer" parent="TabMargin/Content"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="VBoxContainer" parent="TabMargin/Content/ScrollBehavior"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="UserMsg" type="VBoxContainer" parent="TabMargin/Content/ScrollBehavior/ScrollContainer"]
+layout_mode = 2
+
+[node name="Header" type="HBoxContainer" parent="TabMargin/Content/ScrollBehavior/ScrollContainer/UserMsg"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TabMargin/Content/ScrollBehavior/ScrollContainer/UserMsg/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "User"
+
+[node name="ConfigButton" type="Button" parent="TabMargin/Content/ScrollBehavior/ScrollContainer/UserMsg/Header"]
+layout_mode = 2
+text = "Config"
+
+[node name="SubmitButton" type="Button" parent="TabMargin/Content/ScrollBehavior/ScrollContainer/UserMsg/Header"]
+layout_mode = 2
+text = "Submit"
+
+[node name="InputText" type="LineEdit" parent="TabMargin/Content/ScrollBehavior/ScrollContainer/UserMsg"]
+layout_mode = 2
+text = "Hello! Lovely weather today."
+
+[node name="AiMsg" type="VBoxContainer" parent="TabMargin/Content/ScrollBehavior/ScrollContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Header" type="HBoxContainer" parent="TabMargin/Content/ScrollBehavior/ScrollContainer/AiMsg"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TabMargin/Content/ScrollBehavior/ScrollContainer/AiMsg/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "AI Model"
+
+[node name="DeleteButton" type="Button" parent="TabMargin/Content/ScrollBehavior/ScrollContainer/AiMsg/Header"]
+layout_mode = 2
+text = "Delete"
+
+[node name="OutputText" type="TextEdit" parent="TabMargin/Content/ScrollBehavior/ScrollContainer/AiMsg"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Hello! Lovely weather today."

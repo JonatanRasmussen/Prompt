@@ -1,0 +1,77 @@
+[gd_scene load_steps=2 format=3 uid="uid://dq3e33grmcl8y"]
+
+[ext_resource type="PackedScene" uid="uid://dgugn7kay70vg" path="res://scenes/output_tab.tscn" id="2_rn2j1"]
+
+[node name="InputTab" type="HSplitContainer"]
+size_flags_horizontal = 3
+
+[node name="Input" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Input"]
+layout_mode = 2
+
+[node name="CreateNewTab" type="VBoxContainer" parent="Input/VBoxContainer"]
+layout_mode = 2
+
+[node name="Title" type="HBoxContainer" parent="Input/VBoxContainer/CreateNewTab"]
+layout_mode = 2
+
+[node name="LabelName" type="Label" parent="Input/VBoxContainer/CreateNewTab/Title"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Prompt Name:"
+
+[node name="ButtonCreate" type="Button" parent="Input/VBoxContainer/CreateNewTab/Title"]
+layout_mode = 2
+text = "Start New"
+
+[node name="LineEdit" type="LineEdit" parent="Input/VBoxContainer/CreateNewTab"]
+layout_mode = 2
+
+[node name="InputConfig" type="VBoxContainer" parent="Input/VBoxContainer"]
+layout_mode = 2
+
+[node name="Config" type="HBoxContainer" parent="Input/VBoxContainer/InputConfig"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Input/VBoxContainer/InputConfig/Config"]
+layout_mode = 2
+text = "Tab Control:"
+
+[node name="NewTab" type="Button" parent="Input/VBoxContainer/InputConfig/Config"]
+layout_mode = 2
+text = "New"
+
+[node name="ExitTab" type="Button" parent="Input/VBoxContainer/InputConfig/Config"]
+layout_mode = 2
+text = "Exit"
+
+[node name="LoadTab" type="Button" parent="Input/VBoxContainer/InputConfig/Config"]
+layout_mode = 2
+text = "Load"
+
+[node name="CopyTab" type="Button" parent="Input/VBoxContainer/InputConfig/Config"]
+layout_mode = 2
+text = "Copy
+"
+
+[node name="LineEdit" type="LineEdit" parent="Input/VBoxContainer/InputConfig"]
+layout_mode = 2
+
+[node name="Output" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="OutputTabs" type="TabContainer" parent="Output"]
+layout_mode = 2
+
+[node name="OutputTab3" parent="Output/OutputTabs" instance=ExtResource("2_rn2j1")]
+layout_mode = 2

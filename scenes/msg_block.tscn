@@ -1,0 +1,58 @@
+[gd_scene load_steps=2 format=3 uid="uid://dy5g7outr8wdb"]
+
+[ext_resource type="Script" path="res://scripts/MsgBlock.cs" id="1_eg42q"]
+
+[node name="MsgBlock" type="VBoxContainer"]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_eg42q")
+
+[node name="Header" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="InputLabel" type="Label" parent="Header"]
+layout_mode = 2
+text = "Input:"
+
+[node name="OptionsButton" type="OptionButton" parent="Header"]
+layout_mode = 2
+item_count = 2
+selected = 0
+popup/item_0/text = "Text"
+popup/item_0/id = 0
+popup/item_1/text = "Files"
+popup/item_1/id = 1
+
+[node name="ConfigLine" type="LineEdit" parent="Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Config"
+
+[node name="Build" type="Button" parent="Header"]
+layout_mode = 2
+text = "Build"
+
+[node name="Content" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="InputText" type="TextEdit" parent="Content"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Placeholde"
+wrap_mode = 1
+
+[node name="NavigationButtons" type="VBoxContainer" parent="Content"]
+layout_mode = 2
+
+[node name="Remove" type="Button" parent="Content/NavigationButtons"]
+layout_mode = 2
+text = "x"
+
+[node name="MoveUp" type="Button" parent="Content/NavigationButtons"]
+layout_mode = 2
+text = "↑"
+
+[node name="MoveDown" type="Button" parent="Content/NavigationButtons"]
+layout_mode = 2
+text = "↓"
